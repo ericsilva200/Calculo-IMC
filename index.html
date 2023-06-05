@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cálculo IMC</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" name="roboto" rel="stylesheet">
+
+    <body>
+        <h3>Cálculo do IMC</h3>
+        <form>
+            <div>
+                <label for="peso">Peso:</label>
+                <input type="text" id="peso" name="peso" placeholder="Exemplo: 80" />
+                <label for="altura">Altura:</label>
+                <input type="text" id="altura" name="altura" placeholder="Exemplo: 1.80" />
+                <input type="button" id="button" name="button" value="Calcular" onclick="calc()" />
+            </div>
+            <br />
+            <div>
+                <label for="result">Seu IMC:</label>
+                <input type="text" id="result" name="result" />
+            </div>
+        </form>
+        <table border="1">
+            <caption>
+                <h4>VEJA A INTERPRETAÇÃO DO IMC:</h4>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th>IMC</th>
+                    <th>CLASSIFICAÇÃO</th>
+                    <th>OBESIDADE (GRAU)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>MENOR QUE 18,5</td>
+                    <td>MAGREZA</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>ENTRE 18,5 E 24,9</td>
+                    <td>NORMAL</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>ENTRE 25,0 E 29,9</td>
+                    <td>SOBREPESO</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>ENTRE 30,0 E 39,9</td>
+                    <td>OBESIDADE</td>
+                    <td>II</td>
+                </tr>
+                <tr>
+                    <td>MAIOR QUE 40,0</td>
+                    <td>OBESIDADE GRAVE</td>
+                    <td>III</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+</html>

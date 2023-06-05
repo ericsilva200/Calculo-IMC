@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    font-family: "roboto";
+    color: aliceblue;
+}
+
+#button {
+    background-color: lightgreen;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h3 {
+    color: lightgreen;
+}
+
+input {
+    border-radius: 5px;
+}
